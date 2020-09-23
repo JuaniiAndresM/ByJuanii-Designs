@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+    font-family: Nunito, sans-serif;
+    background-color:  #00AAFF;
+    margin: 0px;
+}
+#WhiteBody{
+    background-color:  #00AAFF;
+}
+
+/* 
+!Header 
+*/
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+.header{
+    width: 100%;
+    padding: 0% 5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+header .vector{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo-svg{
+    width: 55px;
+    height: 55px;
+
+    margin-right: 15px;
+    display: block;
+    background-image: url(../img/Logoheader.svg);
+}
+.logo-text{
+    font-weight: bold;
+    font-size: 21px;
+    color: #333333;
+}
+
+.links{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    font-size: 15px;
+
+}
+
+.links a:hover{
+    color:  #00AAFF;
+}
+
+.links li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.links>li{
+    margin-left: 50px;
+}
+.bars-mobile{
+    display: none;
+    color: #333333;
+}
+
+
+/*
+!Landing
+*/
+.Landing .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.landing-text{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.landing-text h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+
+    color: #333333;
+}
+
+.landing-text p{    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    
+    color: #333333;
+}
+
+.Landing .Botones{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.landing-text .button1{
+    font-weight: 600;  
+    color:  #00AAFF;
+
+    width: 200px;
+    height: 65px;
+    padding: 3% 7%;
+
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #00A3FF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.landing-text .button2{
+
+    font-weight: 600;
+    color: white;
+
+    width: 200px;
+    height: 65px;
+    padding: 3% 7%;
+    
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border: 1px solid #00A3FF;
+    background-color:  #00AAFF;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button1:hover{
+    animation: onHover2 ease-in 0.3s forwards;
+}
+
+.button2:hover{
+    animation: onHover ease-in 0.3s forwards;
+}
+.Landing .svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Landing .svg .img{
+    animation: zoom ease-in 1s infinite alternate;
+
+    margin-top: 13%;
+    width: 60%;
+    height: auto;
+}
+
+.Landing .svg-mobile{
+    animation: zoom ease-in 1s infinite alternate;
+    display: none;
+}
+
+
+/*
+!Cards
+*/
+
+.Cards{
+    margin-top: 20%;
+    width: 100%;
+    background-color: white;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card-center{
+    display: flex;
+    justify-content: center;
+}
+.Card{
+    width: 432px;
+    height: 615px;
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: -10px 10px 18px rgba(0, 0, 0, 0.25);
+}
+.Card .card-logo{
+    display: flex;
+    justify-content: center;
+}
+.Card .wave{
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+}
+.card-body{
+    position: relative;
+    top: -270px;
+    z-index: 2;
+}
+.card-body h2{
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+.card-body p{
+    color: white;
+    margin: 0 5%;
+    font-size: 18px;
+}
+.card-bottom{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: -270px;
+    z-index: 2;
+}
+.card-bottom h2{
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+}
+.card-bottom a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10% 30%;
+    border-radius: 50px;
+    color: #00AAFF;
+}
+.card-bottom a:hover{
+    animation: onHover ease-in 0.3s forwards;
+}
+.card-bottom .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+!Contacto
+*/
+.Form{
+    width: 100%;
+    height: 80vh;
+    margin: 2% 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form .form-wrapper{
+    width: 450px;
+    height: 550px;
+    background-color: white;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.25);
+}
+
+.form-wrapper form{
+    margin: 10% 5%;
+}
+.form-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-logo .logo{
+    width: 20%;
+}
+.input-wrapper p{
+    text-align: left;
+    color: #333333;
+    margin-left: 15px;
+    line-height: 1px;
+    font-size: 15px;
+}
+.input-wrapper{
+    margin: 0 5%;
+    text-align: center;
+    color: #333333;
+}
+.input-wrapper input{
+    font-family: Nunito, sans-serif;
+    outline: none;
+    padding-left: 5%;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5%;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    background-color: white;
+}
+.input-wrapper textarea{
+    font-family: Nunito, sans-serif;
+    resize: none;
+    outline: none;
+    padding-left: 5%;
+    margin: 0;
+    columns: 20;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5%;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: white;
+}
+.input-wrapper input::placeholder{
+    font-family: nunito, sans-serif;
+    color: #999999;
+}
+.input-wrapper textarea::placeholder{
+    font-family: nunito, sans-serif;
+    color: #999999;
+}
+.input-wrapper .submit{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding-left: 5% 10%;
+    background-color: #00AAFF;
+}
+.input-wrapper .submit:hover{
+    animation: onHover ease-in 0.3s forwards;
+}
+/*
+!Footer
+*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0px -10px 25px 0px rgba(0,0,0,0.25);
+}
+footer .links-footer{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.links-footer a{
+    text-decoration: none;
+    color: #333333;
+}
+.links-footer a:hover{
+    color: #00AAFF;
+}
+.links-footer>li{
+    margin: 0 20px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-logo{
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10%;
+    text-align: center;
+}
+.copyright{
+    line-height: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #333333;
+}
+/*
+!Keyframes
+*/
+
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.04);
+    }
+}
+
+@keyframes onHover{
+    0%{
+
+    }
+    100%{
+        background-color: #333333;
+    }
+}
+
+@keyframes onHover2{
+    0%{
+
+    }
+    100%{
+        border: 1px solid #333333;
+        color: #333333;
+    }
+}
+
+
+/*
+!Mobile
+*/
+
+
+@media screen and (max-width: 1300px){
+
+    .button1{
+        border: 1px solid white !important;
+        background-color: white !important;
+        color: #00AAFF;
+    }
+    
+    .button2{
+        border: 2px solid white !important;
+    }
+
+    .button1:hover{
+        animation: none;
+    }
+
+    .button2:hover{
+        animation: none;
+    }
+
+    .Landing .wrapper{
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr;
+    }
+
+    .landing-text{
+        margin: 0 5%;
+        text-align: center;
+    }
+    .landing-text p{
+        color: white;
+    }
+    .landing-text h1{
+        color: white;
+    }
+
+
+    .Landing .svg{
+        display: none;
+    }
+
+    .Landing .svg-mobile{
+        text-align: center;
+        display: block;
+    }
+
+    .svg-mobile img{
+        margin-top: 10%;
+        width: 60%;
+    }
+    .card-wrapper{
+        grid-template-columns: 1fr;
+    }
+    footer p{
+        color: #333333;
+    }
+}
+@media screen and (max-width: 684px){
+    .header{
+        justify-content: space-between;
+    }
+    .links{
+        display: none;
+    }
+    .bars-mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Card{
+        width: 300px;
+        height: 459px;
+    }
+    .Card .wave{
+        width: 300px;
+    }
+    .card-body{
+        top: -170px;
+    }
+    .card-bottom{
+        top: -175px;
+    }
+    .card-body h2{
+        font-size: 30px;
+        margin: 0;
+    }
+    .card-body p{
+        font-size: 15px;
+    }
+    .Card .card-logo .logo{
+        width: 80%;
+
+    }
+    .Form .form-wrapper{
+        width: 300px;
+        height: 450px;
+    }
+}
