@@ -8,7 +8,9 @@ body{
     overflow-x:hidden;
     font-family: Nunito, sans-serif;
     background-color:  #00AAFF;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    color: #333333;
 }
 #WhiteBody{
     background-color:  #00AAFF;
@@ -94,13 +96,22 @@ header .vector{
 /*
 !Landing
 */
+
+.Landing{
+    margin-top: 5%;
+}
 .Landing .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .landing-text{
-    margin-left: 10%;
-    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-wrapper .text{
+    margin: 0 10%;
 }
 
 .landing-text h1{
@@ -174,7 +185,6 @@ header .vector{
 .Landing .svg .img{
     animation: zoom ease-in 1s infinite alternate;
 
-    margin-top: 13%;
     width: 60%;
     height: auto;
 }
@@ -203,6 +213,7 @@ header .vector{
     justify-content: center;
 }
 .Card{
+    overflow: hidden;
     width: 432px;
     height: 615px;
     
@@ -219,11 +230,12 @@ header .vector{
 .Card .wave{
     position: relative;
     z-index: 1;
-    margin-top: 4px;
+    width: 120%;
+    top: -50px;
 }
 .card-body{
     position: relative;
-    top: -270px;
+    top: -370px;
     z-index: 2;
 }
 .card-body h2{
@@ -238,9 +250,7 @@ header .vector{
 }
 .card-bottom{
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    top: -270px;
+    top: -380px;
     z-index: 2;
 }
 .card-bottom h2{
@@ -249,9 +259,10 @@ header .vector{
     font-size: 36px;
 }
 .card-bottom a{
+    margin-top: -30px;
     text-decoration: none;
     background-color: white;
-    padding: 10% 30%;
+    padding: 20px 45px;
     border-radius: 50px;
     color: #00AAFF;
 }
@@ -263,52 +274,143 @@ header .vector{
     justify-content: center;
     align-items: center;
 }
+.card-list{
+    display: contents;
+    list-style: none;
+}
+.info-list{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
 
 
 /*
+!Purchase-logo
+*/
+.Form-Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Form-Logo .input-wrapper .atencion-info{
+    margin: 0 20%;
+    text-align: left;
+}
+.Form-Logo .purchase-wrapper{
+    width: 1000px;
+    background-color: white;
+    box-shadow: -10px 10px 18px rgba(0, 0, 0, 0.25);
+    margin: 5% 5%;
+    padding: 2% 0;
+    text-align: center;
+}
+.Form-Logo .input-wrapper{
+    width: 600px;
+    margin: 0 auto;
+}
+.Form-Logo .personal-info{
+    width: 100%;
+}
+.Form-Logo .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Form-Logo .logo img{
+    width: 20%;
+}
+.Form-Logo input{
+    font-family: Nunito, sans-serif;
+    outline: black;
+    padding-left: 10px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    background-color: white;
+}
+.Form-Logo .submit{
+    width: 90%;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding-left: 5% 10%;
+    background-color: #00AAFF;
+}
+.Form-Logo textarea{
+    font-family: Nunito, sans-serif;
+    resize: none;
+    outline: none;
+    padding-left: 15px;
+    margin: 0;
+    columns: 20;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 5%;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    background-color: white;
+}
+.Form-Logo .logo-table{
+    text-align: center;
+}
+.Form-Logo .table-logo{
+    margin: 0 2%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.table-logo input{
+    margin: 0 auto;
+    width: 25px;
+}
+.Form-Logo .table-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
 !Contacto
 */
-.Form{
-    width: 100%;
-    height: 80vh;
-    margin: 2% 0;
+.Form-Contacto{
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Form .form-wrapper{
+.Form-Contacto .form-wrapper{
     width: 450px;
-    height: 550px;
+    margin: 5% 0;
     background-color: white;
     box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.25);
 }
 
-.form-wrapper form{
+.Form-Contacto .form-wrapper form{
     margin: 10% 5%;
 }
-.form-logo{
+.Form-Contacto .form-logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form-logo .logo{
+.Form-Contacto .form-logo .logo{
     width: 20%;
 }
-.input-wrapper p{
+.Form-Contacto .input-wrapper p{
     text-align: left;
     color: #333333;
     margin-left: 15px;
     line-height: 1px;
     font-size: 15px;
 }
-.input-wrapper{
+.Form-Contacto .input-wrapper{
     margin: 0 5%;
     text-align: center;
     color: #333333;
 }
-.input-wrapper input{
+.Form-Contacto input{
     font-family: Nunito, sans-serif;
     outline: none;
     padding-left: 5%;
@@ -319,11 +421,11 @@ header .vector{
     border-radius: 50px;
     background-color: white;
 }
-.input-wrapper textarea{
+.Form-Contacto textarea{
     font-family: Nunito, sans-serif;
     resize: none;
     outline: none;
-    padding-left: 5%;
+    padding-left: 15px;
     margin: 0;
     columns: 20;
     width: 100%;
@@ -333,15 +435,15 @@ header .vector{
     border-radius: 20px;
     background-color: white;
 }
-.input-wrapper input::placeholder{
+.Form-Contacto .input-wrapper input::placeholder{
     font-family: nunito, sans-serif;
     color: #999999;
 }
-.input-wrapper textarea::placeholder{
+.Form-Contacto .input-wrapper textarea::placeholder{
     font-family: nunito, sans-serif;
     color: #999999;
 }
-.input-wrapper .submit{
+.Form-Contacto .input-wrapper .submit{
     cursor: pointer;
     color: white;
     border: none;
@@ -349,8 +451,166 @@ header .vector{
     padding-left: 5% 10%;
     background-color: #00AAFF;
 }
-.input-wrapper .submit:hover{
+.Form-Contacto .input-wrapper .submit:hover{
     animation: onHover ease-in 0.3s forwards;
+}
+
+
+/*
+!Información
+*/
+.Informacion{
+    margin: 2% 0;
+    padding: 5% 0;
+    background-color: white;
+}
+.info-wrapper{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+.text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.info-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-logo img{
+    width: 50%;
+}
+
+
+/*
+!Success
+*/
+
+
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-wrapper{
+    background-color: white;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.25);
+    margin: 5% 2%;
+    width: 600px;
+    text-align: center;
+}
+.success .success-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-logo .logo{
+    width: 20%;
+}
+.success p{
+    margin: 0 10%;
+}
+.success .volver-button{
+    text-decoration: none;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 2% 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #00AAFF;
+    border: 1px solid #00AAFF;
+}
+.success .volver-button:hover{
+    animation: onHover ease-in 0.3s forwards;
+}
+.success .button{
+    margin: 30px 0;
+}
+
+
+/*
+!Planes
+*/
+
+
+.Planes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planes-wrapper{
+    margin: 5% 2%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    text-align: center;
+}
+.Plan-Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.plan{
+    margin: 5%;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.25);
+}
+.plan-logo{
+    margin: 2% 0;
+    font-size: 100px;
+}
+.plan ul{
+    text-align: left;
+    display: contents;
+    list-style-type: none;
+}
+.plan-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-body .fa-check{
+    color: #8cffa7;
+}
+.plan-body .fa-times{
+    color: grey;
+}
+.plan .button{
+    margin: 25px 0;
+}
+.plan .button a{
+    text-decoration: none;
+    background-color: #00AAFF;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 30px;
+}
+.plan-info{
+    margin: 0 20%;
+}
+.plan-info h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+.plan-info h2{
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+.informacion{
+    margin: 0 7%;
+    text-align: left;
 }
 /*
 !Footer
@@ -422,6 +682,7 @@ footer .links-footer{
     }
     100%{
         background-color: #333333;
+        border: 1px solid #333333;
     }
 }
 
@@ -494,11 +755,22 @@ footer .links-footer{
     .card-wrapper{
         grid-template-columns: 1fr;
     }
+    .planes-wrapper{
+        grid-template-columns: 1fr;
+    }
     footer p{
         color: #333333;
     }
 }
-@media screen and (max-width: 684px){
+@media screen and (max-width: 800px){
+    .info-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .info-text{
+        margin: 0 5%;
+    }
+}
+@media screen and (max-width: 775px){
     .header{
         justify-content: space-between;
     }
@@ -508,6 +780,20 @@ footer .links-footer{
     .bars-mobile{
         display: block;
     }
+    .Form-Logo .input-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .Form-Logo .input-wrapper .atencion-info{
+        margin: 0 10%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 736px){
+    .Form-Logo .input-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -516,13 +802,18 @@ footer .links-footer{
         height: 459px;
     }
     .Card .wave{
-        width: 300px;
+        width: 120%;
+        margin-top: 13px;
     }
     .card-body{
-        top: -170px;
+        top: -255px;
     }
     .card-bottom{
-        top: -175px;
+        top: -250px;
+    }
+    .card-bottom a{
+        padding: 15px 30px;
+        margin-top: -20px;
     }
     .card-body h2{
         font-size: 30px;
@@ -538,5 +829,19 @@ footer .links-footer{
     .Form .form-wrapper{
         width: 300px;
         height: 450px;
+    }
+    .info-list{
+        margin-top: 0;
+    }
+    .card-bottom{
+        margin-top: -25px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .card-bottom h2{
+        font-size: 25px;
+    }
+    .plan{
+        width: 350px;
     }
 }

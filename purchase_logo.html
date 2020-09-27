@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JD | Logo</title>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/hf.js"></script>
+
+    <link rel="shortcut icon" href="img/Logo.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body onload="hfindex()" id="WhiteBody">
+
+    <div id="header"></div>
+
+    <!--Contenido-->
+
+    <section class="Form-Logo">
+        <form action="success.html" method="POST" class="purchase-wrapper">
+            <div class="logo">
+                <img src="img/Logo.svg">
+            </div>
+            <div class="input-wrapper">
+                <div>
+                    <hr />
+                    <p><b><i class="fa fa-exclamation-circle"></i> Atencion:</b></p>
+                    <p class="atencion-info">
+                        Para mayor seguridad respecto al pago de su solicitud, el mismo se realizará una vez terminado y aprobado
+                        el diseño final.<br>
+                        Estaremos en constante comunicación para poder cumplir con todo lo que se solicite,
+                        y llegar a un acuerdo con el producto.
+                    </p>
+                    <br>
+                    <hr />
+                    <div class="personal-info">
+                        <h2>Información Personal</h2>
+                        <p>Nombre</p>
+                        <input type="text" name="nombre">
+                        <p>Email</p>
+                        <input type="email" name="email">
+                        <p>Comentario</p>
+                        <textarea class="comentario" type="text" name="comentario"></textarea>
+                    </div>
+                    <div class="empresa-info">
+                        <h2>Información de la Empresa</h2>
+                        <p>Rubro Empresarial</p>
+                        <textarea type="text" name="rubro"></textarea>
+                        <p>¿Desea que le seleccionemos una tipografía?</p>
+                        <textarea type="text" name="tipografia"></textarea>
+                        <p>Origen del Nombre</p>
+                        <textarea type="text" name="origen"></textarea>
+                    </div>
+                </div>
+                <input class="submit" type="submit">
+            </div>
+        </form>
+    </section>
+
+    <div id="footer"></div>
+</body>
+</html>

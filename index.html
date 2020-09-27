@@ -4,39 +4,18 @@
     <title>ByJuanii Designs</title>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/hf.js"></script>
+
     <link rel="shortcut icon" href="img/Logo.svg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
-<body>
+<body onload="hfindex()">
 
-    <header>
-        <div class="header">
-    
-            <a href="index.html" class="logo">
-    
-                <span class="logo-svg"></span>
-                <span class="logo-text">ByJuanii Designs</span>
-    
-            </a>
-            <nav>
-                <ul class="links">
-    
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="acerca.html">Acerca de mí</a></li>    
-                </ul>
-                
-            </nav>
-            <a class="bars-mobile" href="#">
-                <i id="bars" class="fa fa-bars"></i> 
-            </a>
-    
-        </div>
-    
-        <img class="vector" src="img/Vector.svg">
-    </header>
+    <div id="header"></div>
 
     <section class="Landing">
 
@@ -50,16 +29,18 @@
 
             <div class="landing-text">
                 
-                <h1>Diseño de  Logos, Banners, Videos, HTML y CSS.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                
-                <div class="Botones">
-            
-                    <a href="contacto.html" class="button1" type="button">Contactáme</a>
-                    <a href="acerca.html" class="button2" type="button">Más Información</a>
-            
+                <div class="landing-wrapper">
+                    <div class="text">
+                        <h1>Diseño de  Logos, Banners, y Páginas Web.</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam totam expedita quod magnam similique fuga recusandae pariatur sunt tempora perspiciatis eos illum rem necessitatibus, provident soluta facilis voluptates laboriosam officiis.</p>
+                    </div>
+                    <div class="Botones">
+                    
+                        <a href="contacto.html" class="button1" type="button">Contactáme</a>
+                        <a href="#info" class="button2" type="button">Más Información</a>
+                    
+                    </div>
                 </div>
-            
             </div>
             
             <div class="svg">
@@ -82,14 +63,20 @@
                     <img class="wave" src="img/Wave.svg">
                     <div class="card-body">
                         <h2>Logo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laudantium.</p>
+                        <div class="info-list">
+                            <ul class="card-list">
+                                <li><p>3 Diseños Diferentes</p></li>
+                                <li><p>Logotipo o Imagotipo</p></li>
+                                <li><p>PNG, JPG, SVG</p></li>
+                            <ul>
+                        </div>
                     </div>
                     <div class="card-bottom">
                         <div class="Price">
                             <h2>U$S9.99</h2>
                         </div>
                         <div class="button">
-                            <a href="#" class="button-buy">Buy</a>
+                            <a href="purchase_logo.html" class="button-buy"><i class="fa fa-shopping-cart"></i> Comprar</a>
                         </div>
 
                     </div>
@@ -103,14 +90,20 @@
                     <img class="wave" src="img/Wave.svg">
                     <div class="card-body">
                         <h2>Banner</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laudantium.</p>
+                        <div class="info-list">
+                            <ul class="card-list">
+                                <li><p>2 Diseños Diferentes</p></li>
+                                <li><p>Horizontal o Vertical</p></li>
+                                <li><p>PNG, JPG</p></li>
+                            <ul>
+                        </div>
                     </div>
                     <div class="card-bottom">
                         <div class="Price">
                             <h2>U$S9.99</h2>
                         </div>
                         <div class="button">
-                            <a href="#" class="button-buy">Buy</a>
+                            <a href="#" class="button-buy"><i class="fa fa-shopping-cart"></i> Comprar</a>
                         </div>
 
                     </div>
@@ -124,14 +117,20 @@
                     <img class="wave" src="img/Wave.svg">
                     <div class="card-body">
                         <h2>Diseño Web</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laudantium.</p>
+                        <div class="info-list">
+                            <ul class="card-list">
+                                <li><p>Hosting por 1 año.</p></li>
+                                <li><p>Responsive</p></li>
+                                <li><p>HTML y CSS</p></li>
+                            <ul>
+                        </div>
                     </div>
                     <div class="card-bottom">
                         <div class="Price">
                             <h2>U$S24.99</h2>
                         </div>
                         <div class="button">
-                            <a href="#" class="button-buy">Buy</a>
+                            <a href="purchse_page.html" class="button-buy"><i class="fa fa-shopping-cart"></i> Ver Planes</a>
                         </div>
 
                     </div>
@@ -140,30 +139,20 @@
         </div>
     </section>
 
-
-    <footer>
-        <div class="footer-wrapper">
-           <div class="footer-logo">
-                <img src="img/LogoFooter.svg">
-           </div>
-           <div class="sub-logo">
-               <p>ByJuanii Designs</p>
-           </div>
-            <nav>
-                <ul class="links-footer">
-                
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="acerca.html">Acerca de mí</a></li>    
-                </ul>
-                    
-            </nav>
-            <div class="copyright">
-                <p>Copyright © 2020 ByJuanii Designs, Uruguay.</p>
-                <p>Todos los derechos reservados.</p>
+    <section class="Informacion" id="info">
+        <div class="info-wrapper">
+            <div class="info-logo">
+                <i id="infoicon" class="fa fa-info-circle" style="font-size: 150px;"></i>
             </div>
-
+            <div class="text-wrapper">
+                <div class="info-text">
+                    <h2>Información:</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, unde, accusantium maiores debitis laudantium qui, deleniti incidunt eveniet perspiciatis provident aperiam? Neque dolor culpa sit quod ea impedit quisquam cumque, obcaecati est perspiciatis deserunt, ipsum laboriosam sapiente at, praesentium in accusamus eum! Voluptatem incidunt dolorum doloremque, provident a excepturi obcaecati.</p>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <div id="footer"></div>
 </body>
 </html>
