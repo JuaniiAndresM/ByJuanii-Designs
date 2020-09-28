@@ -309,6 +309,7 @@ header .vector{
     background-color: white;
     padding: 20px 45px;
     border-radius: 50px;
+    border: 1px solid white;
     color: #00AAFF;
 }
 .card-bottom a:hover{
