@@ -2,7 +2,8 @@
 
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$comentario = $_POST['comentario'];
+$contenido = $_POST['contenido'];
+$domain = $_POST['domain'];
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -32,7 +33,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                        // Set email format to HTML
-    $mail->Subject = 'Nueva solicitud de contacto | ByJuanii Designs';
+    $mail->Subject = '¡Nueva Compra: Plan Standard! | ByJuanii Designs';
     $mail->Body    = '<html>
         <body>
             <center>
@@ -41,10 +42,13 @@ try {
                         <img class="logo" src="https://i.postimg.cc/63zyWM48/logo.jpg" style="width: 50%;">
                     </div>
                     <div class="input-wrapper" style="text-align: center">
-                        <h2>¡Nueva Solicitud de Contacto!</h2>
+                        <h2 style="font-weight: 300;">¡Nueva Compra: <b>Plan Standard</b>!</h2>
                         <p><b>Nombre: </b>'.$nombre.'</p>                          
                         <p><b>Email: </b>'.$email.'</p>
-                        <p><b>Comentario: </b>'.$comentario.'</p> 
+                        <p><b>Dominio: </b>'.$domain.'</p>
+                        <p><b>Contenido de la Web: </b>'.$contenido.'</p>
+                        <br>
+                        <p><b>Precio: </b>U$S 34.99</p>
                     </div>
                 </div>
             </center>
@@ -52,38 +56,6 @@ try {
     </html>';
 
     $mail->send();
-
-
-    /*
-    !Email de Respuesta.
-    */
-
-    //Recipients
-    $mail->CharSet = 'UTF-8';
-    $mail->setFrom('byjuaniidesigns@gmail.com', 'Juan Andrés Morena');
-    $mail->addAddress($email);                                  // Add a recipient
-
-    // Content
-    $mail->isHTML(true);                                        // Set email format to HTML
-    $mail->Subject = 'ByJuanii Designs | Mensaje Enviado';
-    $mail->Body    = '<html>
-        <body>
-            <center>
-                <div class="form-wrapper" style="background-color:white; margin: 5% 0; width: 300px; border-radius: 25px; border: 1px solid #333333; padding: 5% 5%;">
-                    <div class="form-logo">
-                        <img class="logo" src="https://i.postimg.cc/63zyWM48/logo.jpg" style="width: 30%;">
-                    </div>
-                    <div class="input-wrapper" style="text-align: center">
-                        <h2>¡Solicitud enviada con éxito!</h2>
-                        <p>Gracias por contactar con <b>ByJuanii Designs</b>,<br> te contestaremos a la brevedad.</p>
-                    </div>
-                </div>
-            </center>
-        </body>
-    </html>';
-
-    $mail->send();
-
     header("Location: success.html");
 } catch (Exception $e) {
     echo "Error al enviar: {$mail->ErrorInfo}";

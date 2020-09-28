@@ -1,27 +1,43 @@
-<header>
-    <div class="header">
-    
-        <a href="index.html" class="logo">
-    
-            <span class="logo-svg"></span>
-            <span class="logo-text">ByJuanii Designs</span>
-    
-        </a>
-        <nav>
-            <ul class="links">
-    
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="acerca.html">Acerca de mí</a></li>
-            </ul>
-                
-        </nav>
-        <a class="bars-mobile" href="#">
-            <i id="bars" class="fa fa-bars"></i>  
-        </a>
-    
+<div class="header-absolute">
+    <header>
+        <div class="header">
+        
+            <a href="index.html" class="logo">
+        
+                <img src="img/logo-horizontal.svg" class="logo-svg">
+        
+            </a>
+            <nav>
+                <ul class="links">
+        
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de mí</a></li>
+                </ul>
+                    
+            </nav>
+
+            <div id="open" class="burger" onclick="mobile()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div id="close" class="burger" onclick="mobile()">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <img class="vector" src="img/Vector.svg">
+
+        </div>
+    </header>
+</div>
+<div id="mobile-header">
+    <div class="mobile-wrapper">
+        <ul>
+            <img src="img/Logo-Positivo.svg" class="logo">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="galeria.html">GALERÍA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="acerca.html">ACERCA DE MÍ</a></li>
+        </ul>
     </div>
-    
-    <img class="vector" src="img/Vector.svg">
-</header>
+</div>
