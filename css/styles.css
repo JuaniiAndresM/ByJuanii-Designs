@@ -309,6 +309,7 @@ header .vector{
     background-color: white;
     padding: 20px 45px;
     border-radius: 50px;
+    border: 1px solid white;
     color: #00AAFF;
 }
 .card-bottom a:hover{
@@ -707,7 +708,7 @@ header .vector{
     position: absolute;
     color: white;
     border-radius: 25px;
-    background-color:  rgba(0,0,0,0.5);
+    background-color:  rgba(0,0,0,0.7);
 }
 .galeria-wrapper .desc:hover{
     animation: opacityDesc ease-in 0.3s forwards;
@@ -723,6 +724,12 @@ header .vector{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.galeria-wrapper .titulo{
+    font-size: 30px;
+}
+.muestra2{
+    background-color: #333333;
 }
 
 
