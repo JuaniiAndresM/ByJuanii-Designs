@@ -710,6 +710,9 @@ header .vector{
     border-radius: 25px;
     background-color:  rgba(0,0,0,0.7);
 }
+.galeria-wrapper .desc p{
+    margin: 2% 5%;
+}
 .galeria-wrapper .desc:hover{
     animation: opacityDesc ease-in 0.3s forwards;
 }
